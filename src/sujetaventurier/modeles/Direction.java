@@ -1,4 +1,4 @@
-package sujetaventurier.models;
+package sujetaventurier.modeles;
 
 public enum Direction {
 	North('N'),

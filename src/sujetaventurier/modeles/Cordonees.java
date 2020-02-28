@@ -1,6 +1,6 @@
-package sujetaventurier.models;
+package sujetaventurier.modeles;
 
-public class Coordinates {
+public class Cordonees {
 	private int xPosition;
 	private int yPosition;
 	
