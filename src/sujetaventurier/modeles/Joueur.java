@@ -1,8 +1,8 @@
-package sujetaventurier.models;
+package sujetaventurier.modeles;
 
-public class Player {
+public class Joueur {
 	private String name;
-	private Coordinates currentPosition;
+	private Cordonees currentPosition;
 	
 	public String getName() {
 		return name;
@@ -10,10 +10,10 @@ public class Player {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Coordinates getCurrentPosition() {
+	public Cordonees getCurrentPosition() {
 		return currentPosition;
 	}
-	public void setCurrentPosition(Coordinates currentPosition) {
+	public void setCurrentPosition(Cordonees currentPosition) {
 		this.currentPosition = currentPosition;
 	}
 }

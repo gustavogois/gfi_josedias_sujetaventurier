@@ -1,6 +1,6 @@
-package sujetaventurier.models;
+package sujetaventurier.modeles;
 
-public class Compass {
+public class Boussole {
 	private Direction direction;
 
 	public Direction getDirection() {
