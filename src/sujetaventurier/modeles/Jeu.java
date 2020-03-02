@@ -63,4 +63,18 @@ public class Jeu {
 	public void setChemin(ArrayList<Cordonees> chemin) {
 		this.chemin = chemin;
 	}
+	
+	public boolean positionEstValide(Cordonees cordonees) {
+		return mapJeu.getPoints()[cordonees.getyPosition()][cordonees.getxPosition()] == MapJeu.VALID_POSITION
+			&& mapJeu.getPoints()[cordonees.getyPosition()][cordonees.getxPosition()] != MapJeu.INVALID_POSITION;
+	}
+	
+	public boolean positionEsDansLeMap(Cordonees cordonees) {
+		return cordonees.getyPosition() < mapJeu.getPoints().length
+			&& cordonees.getxPosition() < mapJeu.getPoints()[1].length
+			&& cordonees.getxPosition() >= 0
+			&& cordonees.getyPosition() >= 0;
+	}
+	
+	
 }
