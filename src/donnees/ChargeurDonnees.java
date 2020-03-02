@@ -1,19 +1,22 @@
 package donnees;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 import sujetaventurier.resources.ProjetConstants;
 
 
-public class ChargeurMap {
+public class ChargeurDonnees {
 	public static char[][]chargeMap() throws IOException{
 		char[][] content;
 		String value = new String();
 		
-		ClassLoader classLoader = new ChargeurMap().getClass().getClassLoader();
+		ClassLoader classLoader = new ChargeurDonnees().getClass().getClassLoader();
 		InputStream in = classLoader.getResourceAsStream(ProjetConstants.DONNEES_MAP);
 		BufferedReader reader = new BufferedReader(new InputStreamReader(in));
 		
