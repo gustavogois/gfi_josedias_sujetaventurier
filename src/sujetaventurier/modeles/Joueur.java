@@ -1,13 +1,8 @@
 package sujetaventurier.modeles;
 
 public class Joueur {
-	private String name;
-	private Cordonees currentPosition;
-	
-	public Joueur() {
-		this.name = new String();
-		this.currentPosition = new Cordonees();
-	}
+	private String name = new String();
+	private Cordonees currentPosition = new Cordonees();
 	
 	public Joueur(String name, Cordonees currentPosition) {
 		this.name = name;
@@ -17,6 +12,7 @@ public class Joueur {
 	public String getName() {
 		return name;
 	}
+	
 	public void setName(String name) {
 		this.name = name;
 	}

@@ -9,15 +9,11 @@ public class Jeu {
 	
 	/**
 	 * Constructeur de Jeu
-	 */
-	public Jeu() {}
-	
-	/**
-	 * Constructeur de Jeu
 	 * @param mapJeu le map du jeu
 	 * @param cordonneesInitiales les cordonnées initiales du joueur
 	 * @param chemin le chemin à suivre
 	 */
+	//todo 
 	public Jeu(MapJeu mapJeu, Cordonees cordonneesInitiales, ArrayList<Cordonees>chemin) {
 		this.mapJeu = mapJeu;
 		this.cordonneesInitiales = cordonneesInitiales;
@@ -63,6 +59,7 @@ public class Jeu {
 	public ArrayList<Cordonees> getChemin() {
 		return chemin;
 	}
+	
 	public void setChemin(ArrayList<Cordonees> chemin) {
 		this.chemin = chemin;
 	}

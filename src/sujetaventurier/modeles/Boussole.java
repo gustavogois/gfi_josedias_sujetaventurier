@@ -7,8 +7,12 @@ public class Boussole {
 		return direction;
 	}
 
-	public void setDirection(Direction direction) {
-		this.direction = direction;
+	public void setDirection(char direction) {
+		for(Direction d : Direction.values()) {
+			if(direction == d.direction) {
+				this.direction = d;
+				break;
+			};
+		}
 	}
-	
 }

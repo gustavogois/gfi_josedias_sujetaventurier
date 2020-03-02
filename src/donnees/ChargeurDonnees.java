@@ -12,6 +12,9 @@ import sujetaventurier.resources.ProjetConstants;
 
 
 public class ChargeurDonnees {
+	
+	// todo: l'avenir nous optimisions cette lecture d'un fichier à l'aide de Stream
+	
 	public static char[][]chargeMap() throws IOException{
 		char[][] content;
 		String value = new String();
@@ -33,5 +36,21 @@ public class ChargeurDonnees {
 			content[i] = fileData[i].toCharArray();;
 		}
 		return content;
+	}
+	
+	public static String chargeFichierAvecChemin(String nomFichier) throws IOException{
+		String donnees = new String();
+		try {
+				File fichier = new File(nomFichier);
+				Scanner lireFichier = new Scanner(fichier);
+
+				while(lireFichier.hasNextLine()) {
+					donnees = donnees + lireFichier.nextLine() + "\n";
+				}
+				lireFichier.close();
+		} catch(FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		return donnees;
 	}
 }
