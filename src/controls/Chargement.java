@@ -1,5 +1,6 @@
 package controls;
 
+import java.awt.List;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -30,7 +31,7 @@ public class Chargement {
 		return new Cordonees(cordonneesX, cordonneesY);
 	}
 	
-	public ArrayList<Cordonees>chargerChemin(String nomFichier, Cordonees cordoneesInitiales) throws IOException {
+	public ArrayList<Cordonees> chargerChemin(String nomFichier, Cordonees cordoneesInitiales) throws IOException {
 		String donnees =  ChargeurDonnees.chargeFichierAvecChemin(nomFichier);
 		String[] donneesChemin = donnees.split("\n");
 		ArrayList<Cordonees>itineraire = new ArrayList<Cordonees>();
